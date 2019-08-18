@@ -64,29 +64,29 @@ function init() {
         current = pageNumber;
     }
 
-    document.addEventListener('wheel', throttle(scrollChange, 1500));
-    function switchDots(dotNumber) {
-        const activeDot = document.querySelectorAll('.slide')[dotNumber];
-        slides.forEach(slide => {
-            slide.classList.remove('active');
-        })
-        activeDot.classList.add('active');
-    }
-    function scrollChange(e) {
-        if (e.deltaY > 0) {
-            scrollSlide += 1;
-        } else {
-            scrollSlide -= 1;
-        }
-        if (scrollSlide > 2) {
-            scrollSlide = 0;
-        }
-        if (scrollSlide < 0) {
-            scrollSlide = 2;
-        }
-        switchDots(scrollSlide);
-        nextSlide(scrollSlide);
-    }
+    // document.addEventListener('wheel', throttle(scrollChange, 1500));
+    // function switchDots(dotNumber) {
+    //     const activeDot = document.querySelectorAll('.slide')[dotNumber];
+    //     slides.forEach(slide => {
+    //         slide.classList.remove('active');
+    //     })
+    //     activeDot.classList.add('active');
+    // }
+    // function scrollChange(e) {
+    //     if (e.deltaY > 0) {
+    //         scrollSlide += 1;
+    //     } else {
+    //         scrollSlide -= 1;
+    //     }
+    //     if (scrollSlide > 2) {
+    //         scrollSlide = 0;
+    //     }
+    //     if (scrollSlide < 0) {
+    //         scrollSlide = 2;
+    //     }
+    //     switchDots(scrollSlide);
+    //     nextSlide(scrollSlide);
+    // }
 
     const hamburger = document.querySelector('.menu');
     const hamburgerLines = document.querySelectorAll('.menu line');

@@ -179,7 +179,7 @@ nav {
     padding: 60px 0px;
 }
 .story img{
-    width: 500px;
+    width: 350px;
 }
 .story-desc,.work-desc{
     width: 50%;
@@ -231,23 +231,39 @@ nav {
         height: auto;
     }
     .hero img{
-        height:500px;
+        height:320px;
     }
     .details{
         grid-row: 2/3;
         grid-column: 2/3;
         text-align:center;
+
+    }
+    .details h1{
+        font-size: 32px;
+    }
+    .details h2{
+        font-size: 22px;
+        padding: 5px 0px;
+    }
+    .details p{
+        font-size: 10px;
+        padding: 5px 0px 20px 0px;
     }
     .story,.work{
         flex-direction: column;
+    }
+    .story img{
+        height: 290px;
     }
     .story-desc,.work-desc{
         width:100%;
     }
     .work-gallery{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
     }
+
     .profile{
         padding-top: 30px;
         text-align: center;
@@ -256,7 +272,7 @@ nav {
 
 @media(max-width: 768){
     .hero img{
-        height: 200px;
+        height: 170px;
     }
 }
 
@@ -287,7 +303,7 @@ nav {
     font-size: 18px;
 }
 .social-links img{
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 .logo,.menu{
     z-index:2;
@@ -301,6 +317,7 @@ nav {
     justify-items: center;
     align-items: center;
     text-align: center;
+    padding: 10px 0px;
 }
 .outro img{
     height: 20px;
