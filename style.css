@@ -163,6 +163,9 @@ nav {
     margin: auto;
     padding: 60px 0px;
 }
+.story img{
+    width: 500px;
+}
 .story-desc,.work-desc{
     width: 50%;
 }
