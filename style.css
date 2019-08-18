@@ -14,8 +14,13 @@
     src: url("./Poppins/Poppins-Regular.ttf");
 }
 
+html{
+    height: 100%;
+
+}
 body {
     font-family: PopLight;
+    min-height: 100%;
 }
 
 .portfolio{
@@ -38,11 +43,18 @@ nav {
 }
 
 .dj{
-    min-height:  90vh;
+    min-height:  88vh;
     display: grid;
     grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
-
+.number2, .number3{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
 .hero{
     overflow: hidden;
     height: 500px;
@@ -54,6 +66,9 @@ nav {
     height: 500px;
     transition: transform 0.3s ease-out;
     cursor: pointer;
+}
+.hero a{
+    display: flex;
 }
 .model-right{
     transform: translate(0%,10%);
@@ -243,4 +258,50 @@ nav {
     .hero img{
         height: 200px;
     }
+}
+
+.nav-open{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 25vh;
+    background: white;
+    z-index: 1;
+    color: black;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+}
+.contact{
+    grid-column: 2/3;
+}
+.nav-open h3{
+    font-size: 28px;
+    padding-bottom: 30px;
+}
+.nav-open p{
+    font-size: 18px;
+}
+.social-links img{
+    padding: 0px 20px;
+}
+.logo,.menu{
+    z-index:2;
+}
+.menu{
+    cursor:pointer;
+}
+
+.outro{
+    min-height: 5vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.outro img{
+    height: 20px;
 }
